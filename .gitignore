@@ -1,23 +1,9 @@
-﻿#############
-## Idea
-#############
-target/
-.idea/
-.idea
-.repository/
+﻿.idea
+out
 *.iml
-*.iws
-*.jrtc
-*.java
-*.class
+target
 *.info
-*.properties
-*.jar
 
-/2.JavaCore/
-/3.JavaMultithreading/
-/4.JavaCollections/
-/5.OnlineInternship/
 /out/
 /JavaRushPlugin.properties
 /Instruction.png
