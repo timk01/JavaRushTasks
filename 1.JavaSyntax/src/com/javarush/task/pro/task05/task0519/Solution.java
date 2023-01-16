@@ -1,7 +1,6 @@
 package com.javarush.task.pro.task05.task0519;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 /* 
 Есть ли кто?
@@ -16,7 +15,5 @@ public class Solution {
         int[] copyOfOriginalArray = Arrays.copyOf(array, array.length); //не менять прежний массив!!!!
         Arrays.sort(copyOfOriginalArray);
         System.out.println(Arrays.binarySearch(copyOfOriginalArray, element) >= 0);
-        Integer[] arr = new Integer[10];
-        Collections.sort(arr);
     }
 }
