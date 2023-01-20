@@ -8,7 +8,9 @@ import java.util.Objects;
 
 public class Solution {
     public static void main(String[] args) {
-        int decimalNumber = Integer.MAX_VALUE;
+        /*int decimalNumber = Integer.MAX_VALUE;
+        System.out.println("Десятичное число " + decimalNumber + " равно двоичному числу " + toBinary(decimalNumber));*/
+        int decimalNumber = 1;
         System.out.println("Десятичное число " + decimalNumber + " равно двоичному числу " + toBinary(decimalNumber));
         String binaryNumber = "1211111111111111111111111111111";
         System.out.println("Двоичное число " + binaryNumber + " равно десятичному числу " + toDecimal(binaryNumber));
@@ -20,9 +22,7 @@ public class Solution {
             return binaryNumber;
         }
         while (decimalNumber != 0) {
-            binaryNumber = decimalNumber % 2 + binaryNumber;
-            //а двоичное представление - СТРОКА.
-            //(сравни с вариантом, когда вместо нее число, тогда будет просто сложение, а не конкатенация)
+            binaryNumber = binaryNumber + decimalNumber % 2;
             decimalNumber = decimalNumber / 2;
         }
         return binaryNumber;

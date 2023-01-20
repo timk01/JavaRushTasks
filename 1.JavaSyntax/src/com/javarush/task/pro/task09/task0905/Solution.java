@@ -10,6 +10,7 @@ public class Solution {
         System.out.println("Десятичное число " + decimalNumber + " равно восьмеричному числу " + toOctal(decimalNumber));
         int octalNumber = 25;
         System.out.println("Восьмеричное число " + octalNumber + " равно десятичному числу " + toDecimal(octalNumber));
+        System.out.println(toOctal(150));
     }
 
     public static int toOctal(int decimalNumber) {

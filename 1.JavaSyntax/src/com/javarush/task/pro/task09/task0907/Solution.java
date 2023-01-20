@@ -12,7 +12,9 @@ public class Solution {
     public static void main(String[] args) {
         int decimalNumber = 1256; //1256
         System.out.println("Десятичное число " + decimalNumber + " равно шестнадцатеричному числу " + toHex(decimalNumber));
-        String hexNumber = "4e8";
+        /*String hexNumber = "4e8";
+        System.out.println("Шестнадцатеричное число " + hexNumber + " равно десятичному числу " + toDecimal(hexNumber));*/
+        String hexNumber = "1";
         System.out.println("Шестнадцатеричное число " + hexNumber + " равно десятичному числу " + toDecimal(hexNumber));
     }
 
