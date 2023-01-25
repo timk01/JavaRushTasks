@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class StringTokenizerFormatterPool {
     public static void main(String[] args) {
         String str = "Good news everyone!";
-        String[] strings = str.split("ne"); //sometimes need a complex regex.. soooo
+        String[] strings = str.split("ne"); //sometimes need a complex regex FOR SEVERAL DIVIDERS.. soooo
         System.out.println(Arrays.toString(strings)); //["Good ", "ws everyo", "!"]
 
         //sooo, tokenizer
@@ -17,7 +17,7 @@ public class StringTokenizerFormatterPool {
         boolean hasMoreTokens() - Проверяет, есть ли еще подстроки. (хэзнекстлайна)*/
 
         //StringTokenizer имя = new StringTokenizer(строка, разделители);
-        //разделители — это строка, _каждый_ символ которой считается символом-разделителем
+        //разделители — это строка, _каждый_ символ которой считается символом-разделителем (EACH SYMBOL = DIVIDER)
 
         str = "Good news everyone!";
         StringTokenizer tokenizer = new StringTokenizer(str, "ne");
