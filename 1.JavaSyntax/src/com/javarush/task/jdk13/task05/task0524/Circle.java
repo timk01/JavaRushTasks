@@ -1,0 +1,21 @@
+package com.javarush.task.jdk13.task05.task0524;
+
+/* 
+Основа колеса
+*/
+
+public class Circle {
+    private double x;
+    private double y;
+    private double r;
+
+    public Circle(double x, double y, double r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}

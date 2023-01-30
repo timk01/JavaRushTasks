@@ -40,6 +40,9 @@ public class Solution {
     }
 }
 
+//вообще, великолепно (и как я мог забыть этот прием ?)
+//(x < y) ? -1 : ((x == y) ? 0 : 1)
+
 //решение в лоб (кстати проверку прошло)
 /*            if (this.age == anotherCat.age && this.weight == anotherCat.weight && this.strength == anotherCat.strength) {
                 return false;
