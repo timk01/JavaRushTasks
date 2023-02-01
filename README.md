@@ -1,3 +1,3 @@
 # JavaRushTasks
 part 2, with plugin
-Lessons 5 -- 40
+Lessons 5 -- 40+
