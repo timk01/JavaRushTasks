@@ -76,3 +76,16 @@ public class BubbleSort {
 
 //https://www.youtube.com/watch?v=aXyMkR8LGEo ((все же мне НАМНОГО сейчас больше нравится этот подход))
 //https://www.youtube.com/watch?v=PF7AqefS4MU
+
+//вроде как "классическое" решение
+/*
+        for (int i = 0; i < array.length-1; i++) { //i < array.length-1 чтобы не сравнивать последний с последним
+            for (int j = i+1; j < array.length; j++) { //чтобы не сранивать 1 с первым
+                if (array[i] > array[j]) {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+ */
