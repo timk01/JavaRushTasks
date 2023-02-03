@@ -1,4 +1,4 @@
-package com.javarush.task.jdk13.task07.array_remember;
+package com.javarush.task.jdk13.task07.array_list_generics;
 
 import java.util.Arrays;
 

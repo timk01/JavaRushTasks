@@ -1,4 +1,4 @@
-package com.javarush.task.jdk13.task07.array_remember;
+package com.javarush.task.jdk13.task07.array_list_generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +14,15 @@ public class StreamsArrayList {
         for (int i = 0; i < 10; i++) {
             list.add(random.nextInt(100));
         }
+
+        //https://www.tutorialspoint.com/Conversion-of-Array-To-ArrayList-in-Java
         //using addAll, of
         /*list.addAll(Arrays.asList(1, 2, 3, 4, 5));
         list = List.of(1, 2, 3);
-        Collections.addAll(list, 123, 123);*/
+        Collections.addAll(list, 123, 123);
+        OR
+        Collections.addAll(list, array); //whole array
+        */
 
         //how to print: (besides loop fori...)
         list.stream().forEach(System.out::println);

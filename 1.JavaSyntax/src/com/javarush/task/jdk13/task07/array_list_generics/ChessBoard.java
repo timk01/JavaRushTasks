@@ -1,4 +1,4 @@
-package com.javarush.task.jdk13.task07.array_remember;
+package com.javarush.task.jdk13.task07.array_list_generics;
 
 public class ChessBoard {
     public static void main(String[] args) {

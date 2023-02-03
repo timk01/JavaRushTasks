@@ -19,33 +19,69 @@ public class Solution {
         for (int i = 0; i < FIVE; i++) {
             strings.add(reader.readLine());
         }
+
         ListIterator<String> listIterator = strings.listIterator(strings.size());
-        ListIterator<String> listIterator2 = strings.listIterator();
         String aStringToAdd;
 
         int counter = 0;
-/*        while (counter < THIRTEEN) {
-            aStringToAdd = strings.remove(4);
-            //strings.add(0, aStringToAdd);
-            *//*strings.add(0, strings.remove(strings.size() - 1));*//*
+        while (listIterator.hasPrevious() && counter < THIRTEEN) {
+            aStringToAdd = listIterator.previous();
+            listIterator.remove();
+            while (listIterator.hasPrevious()) {
+                listIterator.previous();
+            }
+            listIterator.add(aStringToAdd);
+            while (listIterator.hasNext()) {
+                listIterator.next();
+            }
             counter++;
-        }*/
+        }
 
+        System.out.println("ssss");
+        strings.stream().forEach(System.out::println);
+    }
+}
+
+//решение
 /*
         for (int i = 0; i < strings.size(); i++) {
             aStringToAdd = strings.remove(strings.size() - 1);
         }
 */
 
-/*        while (listIterator.hasPrevious()) {
-            //listIterator.previous()
-            aStringToAdd = listIterator.previous();
-            System.out.println(aStringToAdd);
-            listIterator.remove();
-            System.out.println("after removal " + strings);
-            strings.add(aStringToAdd);
+/*
+
+        for (int i = 0; i < 13; i++) {
+            String string = strings.remove(4);
+            strings.add(0, string);
+        }
+ */
+
+
+/*        ListIterator<String> itr = list.listIterator();
+        int count = 0;
+
+        while (count++ < 3 && itr.hasNext()) {
+            String el = itr.next();
+            itr.remove();
+            while (itr.hasNext()) {
+                itr.next();
+            }
+            itr.add(el);
+            while (itr.hasPrevious()) {
+                itr.previous();
+            }
         }*/
 
-        strings.stream().forEach(System.out::println);
-    }
+
+/*
+int counter = 0;
+
+while (counter++ < 3) {
+    ListIterator<String> itr1 = list.listIterator(list.size());
+    String s = itr1.previous();
+    itr1.remove();
+    ListIterator<String> itr2 = list.listIterator();
+    itr2.add(s);
 }
+ */
