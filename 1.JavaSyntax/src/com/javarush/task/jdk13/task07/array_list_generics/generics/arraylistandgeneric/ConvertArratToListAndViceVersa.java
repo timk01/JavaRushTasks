@@ -12,7 +12,6 @@ public class ConvertArratToListAndViceVersa {
 
         Cat[] catsArray = {thomas, behemoth, philipp, pushok};
         String abc = "ABC";
-        abc.le
         ArrayList<Cat> catsList = new ArrayList<>(Arrays.asList(catsArray));
         catsArray = catsList.toArray(new Cat[0]); //best case to put Empty array!
 
