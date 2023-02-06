@@ -1,7 +1,35 @@
 package com.javarush.task.jdk13.task08.addons;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class AboutHashMap {
+    public static void main(String[] args) {
+        Map<Integer, String> aMap = new HashMap<>();
+        aMap.put(1, "smth");
+        aMap.get("smth");
+
+    }
 }
+
+//нет порядка, уникальность ключей (но может иметь 1 нулль ключ и много нулль значений), не синхронизирована
+//HashMap class extends AbstractMap class and implements Map interface
+// как и любая карта не имеет отношения к коллекциям напрямую)
+/*
+основные методы:
+int size()
+V put(Object key, Object value)
+void putAll(Map map)
+V remove(Object key)
+boolean containsValue(Object value)
+boolean containsKey(Object key)
+V get(Object key)
+Set entrySet()
+Set keySet()
+boolean containsValue(Object value)
+boolean containsKey(Object key)
+boolean equals(Object o)
+ */
 
 //https://www.youtube.com/watch?v=-oafFAPgLao
 
