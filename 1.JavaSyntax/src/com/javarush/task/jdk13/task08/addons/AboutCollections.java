@@ -7,6 +7,12 @@ public class AboutCollections {
     /*
     Set data structure is used to store unique values only, meaning no duplicate values would be stored in a set.
      */
+    /*
+    Добавлять элемент(ы) 	add(), addAll()
+    Удалять элемент(ы) 	remove(), removeAll()
+    Проверять, есть ли элемент(ы) 	contains(), containsAll()
+    +size()
+     */
 
     //LIST - список (АЛ, ЛЛ, Вектор/Стек). та же обувь п определенном порядке
     //порядок есть, элементы не уникальны
@@ -33,6 +39,18 @@ public class AboutCollections {
     //порядка нет
     /*
     The Map interface doesn't guarantee the order of mappings, however, it depends on the implementation. For instance, HashMap doesn't guarantee the order of mappings but TreeMap does.
+     */
+    /*
+    Получить множество всех пар 	entrySet()
+Получить множество всех ключей 	keySet()
+Получить множество всех значений 	values()
+Добавить пару 	put(key, value)
+Получить значение по ключу 	get(key)
+Проверить наличие «ключа» 	containsKey(key)
+Проверить наличие «значения» 	containsValue(value)
+Проверить что Map — пустой 	isEmpty()
+Очистить Map 	clear()
+Удалить элемент по ключу 	remove(key)
      */
 
     //https://docs.oracle.com/javase/tutorial/collections/interfaces/collection.html
